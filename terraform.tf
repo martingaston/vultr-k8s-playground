@@ -1,11 +1,6 @@
 terraform {
-  cloud {
-    organization = "productive-beach"
-
-    workspaces {
-      name = "vultr-k8s-playground"
-    }
-  }
+  # set TF_CLOUD_ORGANIZATION and TF_WORKSPACE as environment variables to use this from CLI
+  cloud {}
 
   required_providers {
     vultr = {
